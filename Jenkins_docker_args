@@ -10,7 +10,7 @@ pipeline{
         stage("Buikd"){
             steps{
                 sh 'cd /app'
-                sh 'mvn -B'
+                sh 'mvn clean install package'
             }
         }
     }
